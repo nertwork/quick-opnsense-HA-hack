@@ -1,0 +1,5 @@
+#!/bin/sh
+
+case "$@" in *"MASTER"*) /usr/local/opnsense/service/configd_ctl.py interface linkup start vtnet1; /usr/local/opnsense/service/configd_ctl.py interface linkup start vtnet2;/usr/local/opnsense/service/configd_ctl.py interface linkup start vtnet3; /sbin/dhclient -c /var/etc/dhclient_wan.conf vtnet3; /usr/local/etc/rc.newwanipv6;; esac
+
+case "$@" in *"BACKUP"*) /usr/local/opnsense/service/configd_ctl.py interface linkup stop vtnet1; /usr/local/opnsense/service/configd_ctl.py interface linkup stop vtnet2;/usr/local/opnsense/service/configd_ctl.py interface linkup stop vtnet3;; esac
