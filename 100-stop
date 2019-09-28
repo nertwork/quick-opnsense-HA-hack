@@ -1,0 +1,1 @@
+/usr/local/opnsense/service/configd_ctl.py interface linkup stop vtnet1; /usr/local/opnsense/service/configd_ctl.py interface linkup stop vtnet2;/usr/local/opnsense/service/configd_ctl.py interface linkup stop vtnet3
