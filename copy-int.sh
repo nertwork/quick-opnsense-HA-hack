@@ -12,4 +12,4 @@ scp 90-interfaces root@$secondary_opnsense:/usr/local/etc/rc.syshook.d/carp/
 ssh -t root@$secondary_opnsense chmod 755 /usr/local/etc/rc.syshook.d/carp/90-interfaces
 
 scp 100-stop root@$secondary_opnsense:/usr/local/etc/rc.syshook.d/start/
-ssh -t root@$secondary_opnsense chmod 755 /usr/local/etc/rc.syshook.d/carp/100-stop
+ssh -t root@$secondary_opnsense chmod 755 /usr/local/etc/rc.syshook.d/start/100-stop
